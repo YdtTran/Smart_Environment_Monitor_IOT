@@ -1,0 +1,91 @@
+<mxfile host="65bd71144e">
+    <diagram id="HL9pYoJHR_uKJSFrPFRW" name="Page-1">
+        <mxGraphModel dx="891" dy="916" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="border" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#333333;strokeWidth=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="200" width="1000" height="640" as="geometry"/>
+                </mxCell>
+                <mxCell id="title" value="CONTAINER DIAGRAM" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=default;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+                    <mxGeometry x="770" y="200" width="270" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_user_system" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0;entryY=0.6;entryDx=0;entryDy=0;fontSize=14;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="710" y="446.0000000000002" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e_system_user" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.8;exitDx=0;exitDy=0;entryX=1;entryY=0.7;entryDx=0;entryDy=0;fontSize=14;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="710" y="478" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontColor=default;" parent="1" source="3" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="baud rate: 115200&lt;br&gt;data frame: |len| payload |checksum|" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontColor=default;" parent="5" vertex="1" connectable="0">
+                    <mxGeometry x="0.0039" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="STM32 Node&lt;br&gt;(Firmware: C/HAL)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fde3cf;strokeColor=#d79b00;fontColor=default;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="240" width="280" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="edgeStyle=none;html=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontColor=default;" parent="1" source="4" target="9" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="topic: TBD, payload: JSON, QoS: TBD, 1-way publish: device → cloud" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontColor=default;" parent="10" vertex="1" connectable="0">
+                    <mxGeometry x="0.025" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="ESP32 Gateway Node&lt;br&gt;(Firmware: C/ESP-Idf)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fde3cf;strokeColor=#d79b00;fontColor=default;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="400" width="280" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=none;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontSize=14;fontColor=default;resizable=1;" parent="1" source="9" target="13" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="shared MQTT" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;strokeColor=#d79b00;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontSize=14;fontColor=default;fontStyle=1;labelBackgroundColor=default;fillColor=#fde3cf;gradientColor=none;" parent="18" vertex="1" connectable="0">
+                    <mxGeometry x="-0.0102" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=none;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontSize=14;fontColor=default;resizable=1;" parent="1" source="9" target="17" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="&lt;span style=&quot;&quot;&gt;topic: TBD, payload: JSON, QoS: TBD, 1-way publish: device → cloud&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;strokeColor=#d79b00;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontSize=14;fontStyle=1;fontColor=default;fillColor=#fde3cf;" parent="19" vertex="1" connectable="0">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="RASPBERRY PI 4&lt;br&gt;(MQTT: Python,&lt;div&gt;Dashboard: NodeRed)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fde3cf;strokeColor=#d79b00;fontColor=default;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="550" width="280" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Local dashboard&lt;br&gt;(configured on Raspberry)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fde3cf;strokeColor=#d79b00;fontColor=default;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="710" width="260" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="IOT Platform: ThingsBoard" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=default;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;dashed=1;dashPattern=8 8;" parent="1" vertex="1">
+                    <mxGeometry x="700" y="710" width="260" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_panel" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="330" width="320" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_title" value="Legend" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="340" width="200" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_sw1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;dashPattern=4 4;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="376" width="22" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_lbl1" value="External system (ngoài phạm vi triển khai)" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;" parent="1" vertex="1">
+                    <mxGeometry x="112" y="372" width="260" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_sw2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fde3cf;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="412" width="22" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_lbl2" value="Container / thiết bị triển khai (device, service)" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;" parent="1" vertex="1">
+                    <mxGeometry x="112" y="408" width="260" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

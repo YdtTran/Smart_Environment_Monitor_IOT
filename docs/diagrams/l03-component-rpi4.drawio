@@ -1,0 +1,109 @@
+<mxfile host="65bd71144e">
+    <diagram id="xC5BHezvVTyLsCtJNSo_" name="Page-1">
+        <mxGraphModel dx="1165" dy="1198" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="border" value="" style="rounded=0;fillColor=none;strokeColor=#333333;strokeWidth=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="20" width="1360" height="760" as="geometry"/>
+                </mxCell>
+                <mxCell id="title" value="RASPBERRY PI 4 — COMPONENT DIAGRAM (LEVEL 3)" style="text;html=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontSize=22;fontStyle=1;align=left;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="20" width="700" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_panel" value="" style="rounded=1;fillColor=#ffffff;strokeColor=#cccccc;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="90" width="220" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_title" value="Legend" style="text;html=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="55" y="95" width="150" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="sw1" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=4 4;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="55" y="120" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="lbl1" value="External system" style="text;html=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="85" y="118" width="160" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="sw2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6d9f2;strokeColor=#7a4fa3;" vertex="1" parent="1">
+                    <mxGeometry x="55" y="150" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="lbl2" value="Container / swimlane" style="text;html=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="85" y="148" width="160" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="sw3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="55" y="180" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="lbl3" value="Logic / software block" style="text;html=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="85" y="178" width="160" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="esp32" value="ESP32 Gateway" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="280" width="180" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="thingsboard" value="ThingsBoard&#xa;(IoT Platform)" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="460" y="640" width="200" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="user" value="User&#xa;(Local Browser)" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="840" y="640" width="200" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="rpi_container" value="Raspberry Pi 4 — Node-RED Middleware" style="swimlane;startSize=30;fillColor=#e6d9f2;strokeColor=#7a4fa3;html=1;pointerEvents=0;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="100" width="760" height="460" as="geometry"/>
+                </mxCell>
+                <mxCell id="broker_mq" value="Mosquitto Broker&#xa;(local MQTT broker)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontSize=20;fontStyle=1;" vertex="1" parent="rpi_container">
+                    <mxGeometry x="40" y="60" width="220" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="rpi_container" source="sub" target="dash">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="parsed data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=0;strokeColor=default;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontSize=14;fontColor=default;fontStyle=1;labelBackgroundColor=default;" vertex="1" connectable="0" parent="7">
+                    <mxGeometry x="-0.09" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="rpi_container" source="sub" target="fwd">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;JetBrains Mono&amp;quot;, &amp;quot;monospace&amp;quot;, Consolas, &amp;quot;Courier New&amp;quot;, &amp;quot;monospace&amp;quot;; font-size: 14px; font-weight: 700;&quot;&gt;parsed data&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="11">
+                    <mxGeometry x="0.7107" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="sub" value="MQTT Subscriber Node&#xa;(Node-RED flow)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontSize=20;fontStyle=1;" vertex="1" parent="rpi_container">
+                    <mxGeometry x="460" y="50" width="240" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="fwd" value="ThingsBoard Forwarder&#xa;(Node-RED flow)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontSize=20;fontStyle=1;" vertex="1" parent="rpi_container">
+                    <mxGeometry x="140" y="340" width="240" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="dash" value="Local Dashboard UI&#xa;(Node-RED Dashboard)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontSize=20;fontStyle=1;" vertex="1" parent="rpi_container">
+                    <mxGeometry x="540" y="340" width="200" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" value="local subscribe" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontSize=14;fontStyle=1;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" edge="1" parent="rpi_container" source="broker_mq" target="sub">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e1" value="MQTT publish (1-way)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontSize=14;fontStyle=1;libavoidRouting=1;orthogonalLoop=1;jettySize=auto;" edge="1" parent="1" source="esp32" target="broker_mq">
+                    <mxGeometry x="-0.1475" y="15" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="450" y="315"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dash" target="user">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;JetBrains Mono&amp;quot;, &amp;quot;monospace&amp;quot;, Consolas, &amp;quot;Courier New&amp;quot;, &amp;quot;monospace&amp;quot;; font-size: 14px; font-weight: 700;&quot;&gt;HTTP (local network)&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9">
+                    <mxGeometry x="-0.2453" relative="1" as="geometry">
+                        <mxPoint y="35" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="fwd" target="thingsboard">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="MQTT" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=0;strokeColor=default;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontSize=14;fontColor=default;fontStyle=1;labelBackgroundColor=default;" vertex="1" connectable="0" parent="13">
+                    <mxGeometry x="0.0089" y="3" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

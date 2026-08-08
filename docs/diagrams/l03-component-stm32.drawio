@@ -1,0 +1,290 @@
+<mxfile host="65bd71144e">
+    <diagram id="VZmQPEjG4JBUf2-W21wl" name="Page-1">
+        <mxGraphModel dx="1376" dy="1416" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="border" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#333333;strokeWidth=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="130" width="1580" height="970" as="geometry"/>
+                </mxCell>
+                <mxCell id="title" value="COMPONENT DIAGRAM: STM32" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#333333;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;" vertex="1" parent="1">
+                    <mxGeometry x="1330" y="1028" width="320" height="72" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shape=flexArrow;" parent="1" source="168" target="15" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="UART" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;" parent="19" vertex="1" connectable="0">
+                    <mxGeometry x="-0.1778" relative="1" as="geometry">
+                        <mxPoint y="-2" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="STM32 (C/HAL)" style="rounded=1;whiteSpace=wrap;html=1;shape=swimlane;fontStyle=1;startSize=28;fontSize=20;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fillColor=#e6d9f2;strokeColor=#7a4fa3;fontColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="170" width="700" height="740" as="geometry"/>
+                </mxCell>
+                <mxCell id="109" value="HAL_I2C_Manager" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=default;" parent="3" vertex="1">
+                    <mxGeometry x="440" y="350" width="210" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="DHT11_Handler" style="swimlane;whiteSpace=wrap;html=1;startSize=28;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fillColor=#e6d9f2;strokeColor=#7a4fa3;fontColor=default;" parent="3" vertex="1">
+                    <mxGeometry x="40" y="90" width="160" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="init()" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=default;" parent="54" vertex="1">
+                    <mxGeometry x="20" y="40" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="read()" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=default;" parent="54" vertex="1">
+                    <mxGeometry x="20" y="90" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="3" source="63" target="56" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="108" value="sampling-rate" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;" parent="89" vertex="1" connectable="0">
+                    <mxGeometry x="-0.0194" y="1" relative="1" as="geometry">
+                        <mxPoint x="-1" y="1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="114" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="3" source="63" target="109" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="118" value="freq" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;" parent="114" vertex="1" connectable="0">
+                    <mxGeometry x="0.0824" y="1" relative="1" as="geometry">
+                        <mxPoint x="175" y="4" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="163" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="3" source="63" target="129" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="164" value="feedback data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=90;fontSize=14;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;" parent="163" vertex="1" connectable="0">
+                    <mxGeometry x="0.3717" y="-1" relative="1" as="geometry">
+                        <mxPoint x="11" y="-9" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="165" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="3" source="63" target="109" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="166" value="LDR data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;" parent="165" vertex="1" connectable="0">
+                    <mxGeometry x="-0.5067" y="-2" relative="1" as="geometry">
+                        <mxPoint x="230" y="-2" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="63" value="ADC Read" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=default;" parent="3" vertex="1">
+                    <mxGeometry x="52.5" y="360" width="135" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="Decision block" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=default;" parent="3" vertex="1">
+                    <mxGeometry x="385" y="90" width="130" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="139" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="3" source="129" target="96" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="193" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="3" source="129" target="109">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="194" value="input of prev block" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontSize=14;fontColor=default;fontStyle=1;labelBackgroundColor=default;fillColor=none;gradientColor=none;rotation=90;" vertex="1" connectable="0" parent="193">
+                    <mxGeometry x="-0.319" y="1" relative="1" as="geometry">
+                        <mxPoint x="17" y="-25" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="129" value="data process" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=default;" parent="3" vertex="1">
+                    <mxGeometry x="230" y="170" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="130" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="3" source="56" target="129" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="137" value="data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;" parent="130" vertex="1" connectable="0">
+                    <mxGeometry x="0.4933" relative="1" as="geometry">
+                        <mxPoint x="-5" y="-15" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="148" value="scheduler" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=default;" parent="3" vertex="1">
+                    <mxGeometry x="40" y="30" width="480" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="168" value="Abstract function grabbing data" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=default;" parent="3" vertex="1">
+                    <mxGeometry x="210" y="660" width="330" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="170" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.286;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="3" source="129" target="168" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="280" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="171" value="sensor data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;" parent="170" vertex="1" connectable="0">
+                    <mxGeometry x="-0.1" relative="1" as="geometry">
+                        <mxPoint y="154" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="174" value="freq" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;" parent="3" vertex="1" connectable="0">
+                    <mxGeometry x="310.00285714285735" y="459.9999999999999" as="geometry">
+                        <mxPoint x="-124" y="-2" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="176" value="sensor data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;rotation=90;" parent="3" vertex="1" connectable="0">
+                    <mxGeometry x="320" y="279.99952380952385" as="geometry"/>
+                </mxCell>
+                <mxCell id="175" value="LDR data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;" parent="3" vertex="1" connectable="0">
+                    <mxGeometry x="440.00476190476195" y="410" as="geometry">
+                        <mxPoint x="-216" y="-11" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="189" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.631;entryY=0.054;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="3" source="96" target="168">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="190" value="&lt;span style=&quot;font-family: monospace; font-size: 0px; text-align: start; background-color: rgb(251, 251, 251);&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Bhtml%3D1%3BexitX%3D0.5%3BexitY%3D1%3BexitDx%3D0%3BexitDy%3D0%3BentryX%3D0.444%3BentryY%3D0.014%3BentryDx%3D0%3BentryDy%3D0%3BentryPerimeter%3D0%3B%22%20edge%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22810%22%20y%3D%22330%22%20as%3D%22sourcePoint%22%2F%3E%3CmxPoint%20x%3D%22893%22%20y%3D%22522%22%20as%3D%22targetPoint%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20value%3D%22%26lt%3Bspan%20style%3D%26quot%3Bcolor%3A%20rgb(0%2C%200%2C%200)%3B%20font-family%3A%20%26amp%3Bquot%3BJetBrains%20Mono%26amp%3Bquot%3B%2C%20%26amp%3Bquot%3Bmonospace%26amp%3Bquot%3B%2C%20Consolas%2C%20%26amp%3Bquot%3BCourier%20New%26amp%3Bquot%3B%2C%20%26amp%3Bquot%3Bmonospace%26amp%3Bquot%3B%3B%20font-size%3A%2014px%3B%20font-weight%3A%20700%3B%26quot%3B%26gt%3Bservo%2FLED%20status%26lt%3B%2Fspan%26gt%3B%22%20style%3D%22edgeLabel%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3Bresizable%3D0%3Bpoints%3D%5B%5D%3B%22%20vertex%3D%221%22%20connectable%3D%220%22%20parent%3D%222%22%3E%3CmxGeometry%20x%3D%220.6149%22%20y%3D%22-1%22%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20as%3D%22offset%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="189">
+                    <mxGeometry x="-0.5101" y="2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="191" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;JetBrains Mono&amp;quot;, &amp;quot;monospace&amp;quot;, Consolas, &amp;quot;Courier New&amp;quot;, &amp;quot;monospace&amp;quot;; font-size: 14px; font-weight: 700;&quot;&gt;servo/LED status&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="189">
+                    <mxGeometry x="-0.5299" relative="1" as="geometry">
+                        <mxPoint x="72" y="-38" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="DHT11" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fillColor=#fde3cf;strokeColor=#d79b00;fontColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="340" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="4" target="56" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="420" y="319.9999999999999" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="82" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="8" target="63" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;potentiometer&lt;br&gt;&lt;/span&gt;(sampling-rate)" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fillColor=#fde3cf;strokeColor=#d79b00;fontColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="115" y="440" width="210" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="9" target="63" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="LDR" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fillColor=#fde3cf;strokeColor=#d79b00;fontColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="530" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-weight: 700; white-space: nowrap;&quot;&gt;ESP32 Gateway (ESP-IDF / FreeRTOS)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fillColor=#f5f5f5;strokeColor=#666666;fontColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="960" width="310" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="Servo block" style="swimlane;whiteSpace=wrap;html=1;startSize=28;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fillColor=#e6d9f2;strokeColor=#7a4fa3;fontColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="1200" y="180" width="230" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="27" source="28" target="29" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="PHYSICAL CONFIG" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;" parent="30" vertex="1" connectable="0">
+                    <mxGeometry x="-0.04" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="28" value="Servo" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fillColor=#fde3cf;strokeColor=#d79b00;fontColor=default;" parent="27" vertex="1">
+                    <mxGeometry x="20" y="40" width="190" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;feedback potentiometer&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fillColor=#fde3cf;strokeColor=#d79b00;fontColor=default;" parent="27" vertex="1">
+                    <mxGeometry x="20" y="120" width="190" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="Display" style="swimlane;whiteSpace=wrap;html=1;startSize=28;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fillColor=#e6d9f2;strokeColor=#7a4fa3;fontColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="1200" y="490" width="240" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="OLED&lt;br&gt;(OLED_ADDR)" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fillColor=#fde3cf;strokeColor=#d79b00;fontColor=default;" parent="34" vertex="1">
+                    <mxGeometry x="40" y="40" width="170" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="LCD&lt;br&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;(LCD_ADDR)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fillColor=#fde3cf;strokeColor=#d79b00;fontColor=default;" parent="34" vertex="1">
+                    <mxGeometry x="40" y="120" width="170" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="1" source="47" target="63" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="potentiometer&lt;br&gt;(LCD)" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fillColor=#fde3cf;strokeColor=#d79b00;fontColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="620" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="115" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="109" target="36" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="116" value="I2C1 → LCD" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;" parent="115" vertex="1" connectable="0">
+                    <mxGeometry x="0.0057" y="1" relative="1" as="geometry">
+                        <mxPoint x="-11" y="1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="124" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="109" target="35" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="127" value="I2C1 → OLED" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;" parent="124" vertex="1" connectable="0">
+                    <mxGeometry x="-0.0141" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-9" y="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="156" value="warning led" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fillColor=#fde3cf;strokeColor=#d79b00;fontColor=default;" parent="1" vertex="1">
+                    <mxGeometry x="1220" y="390" width="190" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_panel" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;" parent="1" vertex="1">
+                    <mxGeometry x="360" width="550" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_title" value="Legend" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="6" width="250" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_sw1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;dashPattern=4 4;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="38" width="18" height="18" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_lbl1" value="External system" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;" parent="1" vertex="1">
+                    <mxGeometry x="404" y="34" width="220" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_sw2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6d9f2;strokeColor=#7a4fa3;" parent="1" vertex="1">
+                    <mxGeometry x="650" y="38" width="18" height="18" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_lbl2" value="Container / swimlane" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;" parent="1" vertex="1">
+                    <mxGeometry x="674" y="34" width="220" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_sw3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fde3cf;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="70" width="18" height="18" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_lbl3" value="Hardware / sensor" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;" parent="1" vertex="1">
+                    <mxGeometry x="404" y="66" width="220" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_sw4" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="650" y="70" width="18" height="18" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_lbl4" value="Logic / software block" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;" parent="1" vertex="1">
+                    <mxGeometry x="674" y="66" width="220" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="178" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=4;" edge="1" parent="1" source="29" target="63">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1480" y="333"/>
+                            <mxPoint x="1480" y="720"/>
+                            <mxPoint x="480" y="720"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="197" value="&lt;span style=&quot;font-family: monospace; font-size: 0px; text-align: start; background-color: rgb(251, 251, 251);&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22feedback%20data%22%20style%3D%22edgeLabel%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Brotation%3D90%3BfontSize%3D14%3BfontStyle%3D1%3BfontFamily%3DJetBrains%20Mono%2C%20monospace%2C%20Consolas%2C%20Courier%20New%2C%20monospace%3B%22%20vertex%3D%221%22%20connectable%3D%220%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22639.5083869707291%22%20y%3D%22461.53436437897847%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="178">
+                    <mxGeometry x="0.7379" y="2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="198" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;JetBrains Mono&amp;quot;, &amp;quot;monospace&amp;quot;, Consolas, &amp;quot;Courier New&amp;quot;, &amp;quot;monospace&amp;quot;; font-size: 14px; font-weight: 700;&quot;&gt;feedback data&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="178">
+                    <mxGeometry x="0.7344" y="-3" relative="1" as="geometry">
+                        <mxPoint x="-11" y="-7" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="179" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="96" target="28">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1120" y="295"/>
+                            <mxPoint x="1120" y="240"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="181" value="PWM" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontSize=14;fontColor=default;fontStyle=1;labelBackgroundColor=default;fillColor=none;gradientColor=none;" vertex="1" connectable="0" parent="179">
+                    <mxGeometry x="0.5512" y="-1" relative="1" as="geometry">
+                        <mxPoint x="20" y="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="180" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="96" target="156">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1120" y="295"/>
+                            <mxPoint x="1120" y="422"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="182" value="DIGITAL" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=JetBrains Mono, monospace, Consolas, Courier New, monospace;fontSize=14;fontColor=default;fontStyle=1;labelBackgroundColor=default;fillColor=none;gradientColor=none;" vertex="1" connectable="0" parent="180">
+                    <mxGeometry x="0.597" y="2" relative="1" as="geometry">
+                        <mxPoint x="36" y="2" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
