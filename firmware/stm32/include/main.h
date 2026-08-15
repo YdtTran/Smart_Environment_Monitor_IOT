@@ -1,0 +1,15 @@
+#include "stm32f103xb.h"
+#include "stm32f1xx_hal.h"
+#include "stm32f1xx_hal_conf.h"
+#include "stm32f1xx_hal_exti.h"
+#include "gpio_config.h"
+#include "i2c_config.h"
+#include "adc_config.h"
+#include "pwm_config.h"
+#include "uart_config.h"
+#include "ssd1306/ssd1306.h"
+#include "ssd1306/frames.h"
+#include "string.h"
+#include "dht11.h"
+
+void Error_Handler(void);

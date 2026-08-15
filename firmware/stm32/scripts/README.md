@@ -1,0 +1,4 @@
+# scripts
+
+- `deploy_via_rpi.sh` / `deploy_via_rpi.bat` — builds the firmware locally with PlatformIO, scp's `firmware.bin` to the Raspberry Pi 4 over SSH (port 22), then flashes it to the STM32F103C8T6 via an ST-Link probe attached to the Pi's USB using `st-flash` (stlink-tools). Same behavior, `.sh` for bash and `.bat` for Windows cmd (uses the Windows OpenSSH client — `ssh`/`scp` must be on `PATH`). This is the single build+deploy entrypoint for the ST-Link-via-Pi flow — prefer it over running `pio run`/`upload` steps individually.
+- `.env.example` — config template; copy to `.env` (gitignored) and fill in `RPI_HOST` at minimum. Read by both scripts. `PIO_BIN` (`.bat` only) overrides the default `pio.exe` path (`C:\Users\trand\.platformio\penv\Scripts\pio.exe`, per the root [AGENTS.md](../../../AGENTS.md) Commands section) since `pio`/`platformio` isn't on `PATH` by default on Windows.
